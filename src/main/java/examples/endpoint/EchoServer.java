@@ -25,8 +25,8 @@ public class EchoServer
 
         JavaxWebSocketServletContainerInitializer.configure(servletContextHandler, (context, container) ->
         {
-            ServerEndpointConfig echoConfig = ServerEndpointConfig.Builder.create(EchoServerEndpoint.class, "/echo").build();
-            container.addEndpoint(echoConfig);
+//            ServerEndpointConfig echoConfig = ServerEndpointConfig.Builder.create(EchoServerEndpoint.class, "/echo").build();
+//            container.addEndpoint(echoConfig);
 
             ServerEndpointConfig pathParamsConfig = ServerEndpointConfig.Builder.create(EchoServerGenericEndpoint.class, "/test/{param}/category").build();
             container.addEndpoint(pathParamsConfig);
