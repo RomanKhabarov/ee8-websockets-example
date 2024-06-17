@@ -6,8 +6,7 @@ import org.slf4j.LoggerFactory;
 
 import javax.websocket.*;
 
-public class EchoServerEndpoint extends Endpoint
-{
+public class EchoServerEndpoint extends Endpoint {
     private static final Logger LOG = LoggerFactory.getLogger(EchoServerEndpoint.class);
 
     @Override
